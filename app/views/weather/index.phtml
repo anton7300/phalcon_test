@@ -1,0 +1,28 @@
+<h2>Get weather</h2>
+
+<form>
+
+    <p>
+        <label for="city">City</label>
+        <?php echo $this->tag->textField('name'); ?>
+    </p>
+
+    <h4>or</h4>
+
+    <p>
+        <label for="lat">Lat</label>
+        <?php echo $this->tag->textField('lat'); ?>
+    </p>
+
+    <p>
+        <label for="lon">Lon</label>
+        <?php echo $this->tag->textField('lon'); ?>
+    </p>
+
+    <p>
+        <?php echo $this->tag->submitButton('Get'); ?>
+    </p>
+
+</form>
+
+<p id="result"></p>

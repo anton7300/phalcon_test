@@ -1,0 +1,15 @@
+<?php
+
+echo $this->tag->linkTo(['weather', 'Get weather']); ?>
+
+<p>
+    Cities quantity:
+    <?php echo $cities->count(); ?>
+</p>
+
+<?php if ($cities->count() > 0) {
+    foreach ($cities as $city) {
+        echo '<br/>' . $city->name;
+    }
+}
+?>
